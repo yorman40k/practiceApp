@@ -1,0 +1,28 @@
+<h1>Personaje</h1>
+<hr>
+
+
+<table class="table table-hover table dark">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Species</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let personaje of personajes">
+        <th scope="row">{{personaje.id}}</th>
+        <td><img src={{personaje.image}} alt="" [ngStyle]="{ 'width' : '120px' }"></td>
+        <td>{{personaje.name}}</td>
+        <td>{{personaje.gender}}</td>
+        <td>{{personaje.species}}</td>
+        <td>{{personaje.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+<br><br>
